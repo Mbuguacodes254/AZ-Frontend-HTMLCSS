@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale1.0" />
+    <title>User Information Forms Assignment</title>
+    <style>
+      body {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        background-color: palevioletred;
+        margin: auto;
+        padding: 30px;
+      }
+      h1 {
+        color: black;
+        text-align: justify;
+        margin-bottom: 30px;
+      }
+      h2 {
+        color: rgb(9, 207, 233);
+        margin-top: 20px;
+      }
+      form {
+        background-color: rgb(138, 132, 132);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px;
+        margin-bottom: 30px;
+      }
+      label {
+        font-weight: bold;
+        color: black;
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="tel"],
+      input[type="number"],
+      input[type="date"],
+      input[type="country"],
+      select,
+      textarea {
+        width: 80%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 4px;
+      }
+      input[type="radio"],
+      input[type="checkbox"] {
+        margin-right: 5px;
+      }
+      input[type="submit"] {
+        background-color: rgb(166, 218, 26);
+        border: none;
+        padding: 20px 30px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #0056b3;
+      }
+      footer {
+        text-align: center;
+        color: rgb(49, 2, 49);
+        margin-top: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>User Information Forms</h1>
+    <h2>Form 1</h2>
+    <form>
+      <label for="name">Name</label><br />
+      <input
+        type="text"
+        id="Name"
+        name="Name"
+        placeholder="please input your name"
+        required
+      /><br />
+      <label for="email">Email</label><br />
+      <input
+        type="text"
+        id="Email"
+        name="email"
+        placeholder="please input your Email"
+        required
+      /><br />
+      <label for="Adress">Address</label><br />
+      <input
+        type="text"
+        id="Address"
+        name="Address"
+        placeholder="please input your Address"
+        required
+      /><br />
+      <label for="country">Country</label><br />
+      <select id="country" name="country" required>
+        <option value="" disabled selected>Select your country</option>
+        <option value="KEN">Kenya</option>
+        <option value="GH">Ghana</option>
+        <option value="ET">Ethiopia</option>
+        <option value="NG">Nigeria</option>
+        <option value="SA">South Africa</option>
+      </select>
+      <br />
+      <label for="phone">Phonenumber</label><br />
+      <input type="tel" id="PhoneNumber" pattern="[0-9]{10}" required /><br />
+      <label for="Date">Birthdate</label><br />
+      <input
+        type="date"
+        id="Birthdate"
+        maxlength="8"
+        placeholder="DDMMYYYY"
+        required
+      />
+      <br />
+      <label for="Age">Age</label><br />
+      <input type="number" id="Age" required /><br />
+      <input type="submit" value="Submit  form 1" /><br />
+      <br />
+    </form>
+    <h2>Form 2</h2>
+    <p>Gender</p>
+    <form>
+      <label>
+        <input type="radio" name="gender" value="male" required /> Male
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Female" required /> Female
+      </label>
+      <label>
+        <input type="radio" name="gender" value="Other" required /> Other
+      </label>
+      <p>User Interest required</p>
+      <label>
+        <input type="checkbox" name="Interest" value="Reading" />
+        Reading
+      </label>
+      <label>
+        <input type="checkbox" name="Interest" value="Swimming" />
+        Swimming
+      </label>
+      <label>
+        <input type="checkbox" name="Interest" value="Sports" /> Sports
+      </label>
+      <label>
+        <input type="checkbox" name="Interest" value="Music" />
+        Music </label
+      ><br />
+      <label for="Feedback">Feedback</label><br />
+      <input type="Text" id="Feedback" maxlength="100" />
+      <br />
+      <input type="submit" value="Submit  form 2" /><br />
+    </form>
+    <footer>
+      <p1>Owner: Lizzie Mbugua</p1> <br />
+      <p2>Contact: lizziecodes254@gmail.com</p2> <br />
+      <a href="https://www.github.com/Mbuguacodes254" target="_blank"
+        >My Github</a
+      >
+    </footer>
+  </body>
+</html>
