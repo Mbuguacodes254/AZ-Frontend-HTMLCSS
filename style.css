@@ -1,0 +1,16 @@
+/* style.css */
+h1 {
+  background-color: rgb(9, 24, 223);
+}
+ul {
+  border: 1px solid #d48c05;
+  padding: 10px;
+}
+li {
+  color: rgb(247, 12, 90);
+  font-weight: bold;
+}
+li:hover {
+  background-color: rgb(6, 187, 187);
+  color: rgb(255, 136, 0);
+}
